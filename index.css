@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 350px;
+  display: grid;
+  place-items: center;
+  background: white;
+}
+
+.container {
+  width: 300px;
+  background: hsl(300, 24%, 96%);
+  display: grid;
+  place-items: center;
+  margin-left: 15px;
+}
+
+.text {
+  display: grid;
+  place-items: center;
+}
+.text h1 {
+  width: 200px;
+  margin-left: 50px;
+  color: hsl(300, 43%, 22%);
+}
+.container p {
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  color: hsl(303, 10%, 53%);
+}
+.first,
+.second,
+.third {
+  height: 75px;
+  width: 250px;
+  background: hsl(303, 10%, 53%);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 25px;
+  border: 2px solid hsl(300, 24%, 96%);
+  border-radius: 7px;
+  display: grid;
+  justify-content: center;
+}
+.first p {
+  color: hsl(300, 24%, 96%);
+}
+.second p {
+  color: hsl(300, 24%, 96%);
+}
+.third p {
+  color: hsl(300, 24%, 96%);
+}
+.star {
+  margin-top: 10px;
+  margin-left: 45px;
+}
+.info,
+.info1,
+.info2 {
+  width: 270px;
+  background: hsl(300, 43%, 22%);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  border: 1px solid hsl(300, 43%, 22%);
+  border-radius: 7px;
+  height: 200px;
+}
+.info p,
+h5 {
+  color: white;
+}
+.info1 p,
+h5 {
+  color: white;
+}
+.info2 p,
+h5 {
+  color: white;
+}
+.info h6 {
+  color: hsl(333, 80%, 67%);
+}
+.info1 h6 {
+  color: hsl(333, 80%, 67%);
+}
+.info2 h6 {
+  color: hsl(333, 80%, 67%);
+}
+.person {
+  margin-top: 15px;
+  display: grid;
+  justify-content: center;
+}
+.person h5 {
+  margin-top: -40px;
+  padding-bottom: 5px;
+}
+.person h6 {
+  margin-top: -20px;
+}
+.person img {
+  height: 45px;
+  width: 45px;
+  border: 1px solid hsl(300, 43%, 22%);
+  border-radius: 55px;
+  margin-top: 5px;
+  margin-left: -70px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    margin-left: 0;
+  }
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .text {
+    place-items: start;
+    width: 30%;
+  }
+  .text h1 {
+    margin: 0;
+  }
+  .starbox {
+    margin-right: 70px;
+    margin-top: 15px;
+  }
+
+  .last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .first,
+  .second,
+  .third {
+    width: 400px;
+    display: flex;
+    height: 35px;
+  }
+  .first {
+    margin-left: -25px;
+  }
+  .second {
+    margin-left: -15px;
+  }
+  .third {
+    margin-left: -5px;
+  }
+  .last {
+    margin-top: 100px;
+  }
+  .info {
+    margin-top: -100px;
+  }
+  .info1 {
+    margin-top: -60px;
+  }
+}
